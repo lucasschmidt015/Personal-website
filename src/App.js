@@ -1,5 +1,7 @@
 import React from "react";
 import Photo from './Resources/Eu.png'
+import Primeflix from './Resources/Primeflix.png'
+import SistenChamados from './Resources/SistenChamados.png'
 import { AiFillHtml5, AiOutlineMobile } from 'react-icons/ai'
 import { DiCss3 } from 'react-icons/di'
 import { IoLogoJavascript } from 'react-icons/io'
@@ -87,10 +89,14 @@ export default function App(){
           </div>          
           <div className="projects">
             <div className="project">
-              
+              <img src={Primeflix}></img>
+              <h1>Project-Films</h1>
+              <button onClick={() => window.open('https://primeflixf.netlify.app/', '_blank')}>Ver</button>
             </div>
             <div className="project">
-              
+              <img src={SistenChamados}></img>
+              <h1>Sistema de Chamados</h1>
+              <button onClick={() => window.open('https://sistemdechamados.netlify.app/deshboard', '_blank')}>Ver</button>
             </div>
           </div>
         </div>
