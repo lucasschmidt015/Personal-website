@@ -7,6 +7,9 @@ import { DiCss3 } from 'react-icons/di'
 import { IoLogoJavascript } from 'react-icons/io'
 import { SiCplusplus } from 'react-icons/si'
 import { FaReact } from 'react-icons/fa'
+import { ImWhatsapp, ImLinkedin2 } from 'react-icons/im'
+import { HiOutlineMail } from 'react-icons/hi'
+
 
 
 export default function App(){
@@ -99,6 +102,28 @@ export default function App(){
               <button onClick={() => window.open('https://sistemdechamados.netlify.app/deshboard', '_blank')}>Ver</button>
             </div>
           </div>
+        </div>
+
+        <div className="my-contacts">
+            <h1>Contato</h1>
+            <span>Você pode entrar em contato comigo pelos seguintes meios</span>
+            <div className="contact">
+              <ImWhatsapp/>
+              <div>
+                <h2>WhatsApp</h2>
+                <p>(53) 981349571</p>
+              </div>
+              <HiOutlineMail/>
+              <div>
+                <h2>Email</h2>
+                <p>lucas.schmidt015@gmail.com</p>
+              </div>
+              <ImLinkedin2/>
+              <div>
+                <h2>Linkedin</h2>
+                <p>Lucas Schmidt</p>
+              </div>
+            </div>
         </div>
     </div>
   );
