@@ -215,12 +215,12 @@
 }
 
 .contact{
-    padding-top: 15px;
-    display: flex;
+    display: flex;    
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;    
+    padding: 15px 0 0 0 ;
 }
 
 .contact div p{

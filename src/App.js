@@ -110,8 +110,10 @@ export default function App(){
         </div>
 
         <div className="my-contacts">
-            <h1>Contato</h1>
-            <span>Você pode entrar em contato comigo pelos seguintes meios</span>
+            <div>
+              <h1>Contato</h1>
+              <span>Você pode entrar em contato comigo pelos seguintes meios</span>
+            </div>
             <div className="contact">
               <ImWhatsapp/>
               <div>
@@ -132,7 +134,6 @@ export default function App(){
         </div>
         <footer>
           <div>
-            {/* <FaFacebookF onClick={() => request('https://google.com/')}/> */}
             <BsInstagram onClick={() => request('https://www.instagram.com/__schmidtlucas/')}/>
             <ImLinkedin2 onClick={() => request('https://www.linkedin.com/in/lucas-schmidt-76a806212')}/>
             <BsGithub onClick={() => request('https://github.com/lucasschmidt015')}/>
