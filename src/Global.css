@@ -210,8 +210,8 @@
     margin: 0 auto;
     display: flex;        
     flex-direction: column;
-    margin-top: 4%;
-    padding-bottom: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 
 .contact{
@@ -230,6 +230,31 @@
 .contact svg{
     width: 11%;
     padding-right: 20px;
+}
+
+footer{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    background-color: #1d1c1c;
+    color: #fff;
+}
+
+footer div{
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+    padding-bottom: 10px;
+}
+
+footer svg{
+    height: 28px;
+    width: 28px;
+    font-size: 10px;
+    margin-right: 2%;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {    
@@ -368,8 +393,8 @@
     }
     
     .projects{
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 100%;        
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -380,8 +405,9 @@
     .project{
         width: 100%;
         height: 100%;
-        margin-top: 5%;
+        margin-top: 0%;
         margin-left: 15%;
+        margin-bottom: 5%;
         background-color: #fff;
         border-radius: 20px;
         display: flex;
@@ -397,7 +423,6 @@
     }
     
     .project h1{
-        width: 100%;
         height: 10%;
         font-size: 25px;
         text-align: center;
@@ -421,5 +446,47 @@
         background-color: rgb(23, 129, 216);
         font-size: 28px;
         cursor: pointer;
+    }
+
+    .my-contacts{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;        
+        flex-direction: column;
+        margin-top: 5%;
+        
+    }
+    
+    .contact{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;    
+    }
+    
+    .contact div p{
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+    
+    .contact svg{
+        width: 11%;
+        padding-right: 20px;
+        display: none;
+    }
+    
+    footer div{
+        width: 90%;
+    }
+    
+    footer svg{
+        height: 28px;
+        width: 28px;
+        font-size: 10px;
+        margin-right: 8%;
     }
 }

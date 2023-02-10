@@ -6,13 +6,18 @@ import { AiFillHtml5, AiOutlineMobile } from 'react-icons/ai'
 import { DiCss3 } from 'react-icons/di'
 import { IoLogoJavascript } from 'react-icons/io'
 import { SiCplusplus } from 'react-icons/si'
-import { FaReact } from 'react-icons/fa'
+import { FaReact, FaFacebookF } from 'react-icons/fa'
 import { ImWhatsapp, ImLinkedin2 } from 'react-icons/im'
 import { HiOutlineMail } from 'react-icons/hi'
-
+import { BsInstagram, BsGithub } from 'react-icons/bs'
 
 
 export default function App(){
+
+  function request(href){
+    window.open(href, '_blank')
+  }
+
   return(
     <div className="container">
         <div className="cabecalho">
@@ -94,12 +99,12 @@ export default function App(){
             <div className="project">
               <img src={Primeflix}></img>
               <h1>Project-Films</h1>
-              <button onClick={() => window.open('https://primeflixf.netlify.app/', '_blank')}>Ver</button>
+              <button onClick={() => request('https://primeflixf.netlify.app/')}>Ver</button>
             </div>
             <div className="project">
               <img src={SistenChamados}></img>
               <h1>Sistema de Chamados</h1>
-              <button onClick={() => window.open('https://sistemdechamados.netlify.app/deshboard', '_blank')}>Ver</button>
+              <button onClick={() => request('https://sistemdechamados.netlify.app/deshboard')}>Ver</button>
             </div>
           </div>
         </div>
@@ -125,6 +130,14 @@ export default function App(){
               </div>
             </div>
         </div>
+        <footer>
+          <div>
+            {/* <FaFacebookF onClick={() => request('https://google.com/')}/> */}
+            <BsInstagram onClick={() => request('https://www.instagram.com/__schmidtlucas/')}/>
+            <ImLinkedin2 onClick={() => request('https://www.linkedin.com/in/lucas-schmidt-76a806212')}/>
+            <BsGithub onClick={() => request('https://github.com/lucasschmidt015')}/>
+          </div>          
+        </footer>
     </div>
   );
 }
